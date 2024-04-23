@@ -23,7 +23,7 @@
     <ProjectGuid>{E8C30CBD-64D1-44F8-9172-82B728986DCC}</ProjectGuid>
     <Keyword>NetCoreCProj</Keyword>
     <RootNamespace>LibCecSharpCore</RootNamespace>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
