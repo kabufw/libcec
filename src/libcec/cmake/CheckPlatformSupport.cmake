@@ -210,8 +210,20 @@ else()
     set(PYTHON_INCLUDE_PATH "${Python2_INCLUDE_DIRS}")
     set(PYTHON_LIBRARIES "${Python2_LIBRARIES}")
   else()
+    set(PYTHON_LIBRARIES "C:/../../AppData/Local/Programs/Python/Python38/libs")
+    set(PYTHON_INCLUDE_PATH "C:/../../AppData/Local/Programs/Python/Python38/include")
+
     include(FindPythonLibs)
     find_package(PythonLibs)
+
+    if(0)
+      message(STATUS "PlatformSupport PYTHON_LIBRARY: ${PYTHON_LIBRARY}")
+      message(STATUS "PlatformSupport PYTHON_INCLUDE_DIR: ${PYTHON_INCLUDE_DIR}")
+      message(STATUS "PlatformSupport PYTHONLIBS_FOUND: ${PYTHONLIBS_FOUND}")
+      message(STATUS "PlatformSupport PYTHON_LIBRARIES: ${PYTHON_LIBRARIES}")
+      message(STATUS "PlatformSupport PYTHON_INCLUDE_DIRS: ${PYTHON_INCLUDE_DIRS}")
+      message(STATUS "PlatformSupport PYTHONLIBS_VERSION_STRING: ${PYTHONLIBS_VERSION_STRING}")
+    endif()
   endif()
 
   # Swig
